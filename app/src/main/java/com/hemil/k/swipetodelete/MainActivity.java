@@ -12,7 +12,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private SwipeRecylerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +21,21 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
 
-        List<String> movies = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.movie)));
 
-        adapter = new SwipeRecylerAdapter(movies, this);
+        List<String> movies = new ArrayList<>();
+        movies.add("Harry Poter");
+        movies.add("Captain America");
+        movies.add("Iron Man");
+        movies.add("Wonder Women");
+        movies.add("The Flash");
+        movies.add("Avengers");
+        movies.add("Pirates of Caribbean");
+        movies.add("Thor");
+        movies.add("Hulk");
+
+        SwipeRecylerAdapter adapter = new SwipeRecylerAdapter(movies, this);
         recyclerView.setAdapter(adapter);
+
+
     }
 }
