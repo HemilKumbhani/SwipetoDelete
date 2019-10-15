@@ -47,7 +47,7 @@ public class SwipeRecylerAdapter extends RecyclerSwipeAdapter<SwipeRecylerAdapte
         holder.lnrDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                movies.remove((int)v.getTag());
+                movies.remove(position);
                 notifyDataSetChanged();
                 holder.swipeLayout.close();
                 flag[position] = false;
@@ -62,6 +62,7 @@ public class SwipeRecylerAdapter extends RecyclerSwipeAdapter<SwipeRecylerAdapte
             }
         });
         if (flag[position]) {
+
             holder.swipeLayout.open();
         } else {
             holder.swipeLayout.close();
