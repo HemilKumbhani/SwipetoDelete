@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">SwipeToDelete</string>
-
+    <string-array name="movie">
+        <item>Harry Poter</item>
+        <item>Captain America</item>
+        <item>Iron Man</item>
+        <item>Wonder Women</item>
+        <item>The Flash</item>
+        <item>Avengers</item>
+        <item>Pirates of Caribbean</item>
+        <item>Thor</item>
+        <item>Hulk</item>
+    </string-array>
 </resources>
