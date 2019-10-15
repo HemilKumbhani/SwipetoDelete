@@ -15,3 +15,4 @@ In this demo, I have implemented in item_your_news_feeds.xml
 3) To delete item see SwipeRecyclerAdapter.java
 
 Screenshots are attached here.
+![Alt text](/screenshot/Screenshot_1571158816.png?raw=true "Optional Title")
